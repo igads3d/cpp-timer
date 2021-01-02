@@ -48,9 +48,9 @@ void Timer::print_results() {
     if (time_vector_.size() > 2) {
         std::cout << std::endl;
         for (unsigned int i = 0; i < time_vector_.size() - 1; i++) {
-            std::cout << i << "\t"      << std::fixed << std::setprecision(6) <<
-                      this->check_ms(i) << " ms\t\t"  << std::setprecision(3) <<
-                      100 / (overall_time / this->check_ms(i)) << "%\n";
+            std::cout << i << "\t" << std::fixed << std::setprecision(6) 
+                      << this->check_ms(i) << " ms\t\t"  << std::setprecision(3) 
+                      << 100 / (overall_time / this->check_ms(i)) << "%\n";
         }
     }
 
